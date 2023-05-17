@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taffe Hotel Room Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Taffe Hotel Room Reservation</h1>
+    <form action="/reservation" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="30" required><br><br>
+        
+        <label for="check_in">Check-in date:</label>
+        <input type="date" id="check_in" name="check_in" required><br><br>
+        
+        <label for="check_out">Check-out date:</label>
+        <input type="date" id="check_out" name="check_out" required><br><br>
+        
+        <label for="room_type">Room Type:</label>
+        <select id="room_type" name="room_type" required>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+            <option value="Quadruple">Quadruple</option>
+        </select><br><br>
+        
+        <input type="submit" value="Submit" class="btn btn-primary">
+        <a href="/" class="btn btn-primary">Home</a>
+    </form>
+</body>
+</html>
+

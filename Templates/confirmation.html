@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Confirmation Page</h1>
+    <p>Dear {{ name }},</p>
+    <p>Thank you for choosing the Taffe Hotel. We are pleased to confirm your room reservation from {{ check_in }} to {{ check_out }}.</p>
+    <p>We look forward to seeing you soon.</p>
+    <a class="btn btn-primary" href="{{ url_for('home') }}">Home</a>
+</body>
+</html>
+
